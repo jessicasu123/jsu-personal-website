@@ -1,0 +1,14 @@
+.company-logo {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+.company-info {
+    display: inline-block;
+}
+
+.company-name {
+    font-weight: bold;
+    font-size: 100px;
+}

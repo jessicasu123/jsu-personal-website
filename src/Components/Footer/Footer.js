@@ -14,7 +14,7 @@ class Footer extends Component {
             <div className="footer">
                 {FooterElements.map(elm => {
                     return (
-                        <img className="footer-icon" src={elm.iconName} alt={elm.alt} 
+                        <img className={elm.className} src={elm.iconName} alt={elm.alt} 
                             onClick={() => this.redirectFromFooterIcon(elm.link)} />
                     )
                 })
