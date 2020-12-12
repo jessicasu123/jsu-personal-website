@@ -1,0 +1,40 @@
+.project-row {
+    display: flex;
+    padding: 5px 30px;
+    border: 1px solid rgb(230, 227, 227);
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.project-row:hover{
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px 0 rgba(94, 93, 93, 0.2), 0 6px 20px 0 rgba(94, 93, 93, 0.2);
+    color: var(--theme-green-color);
+}
+
+.project-image {
+    width: 180px;
+    height: 180px;
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.project-text {
+    font-size: 65px;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.colored-dot {
+    color: var(--theme-green-color);
+    display: inline-block;
+    font-size: 100px;
+}

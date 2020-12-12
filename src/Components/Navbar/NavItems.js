@@ -1,10 +1,10 @@
 export const NavItems = [
     {
-        title: "Work",
+        title: "WORK",
         link: "/work"
     }, 
     {
-        title: "Resume",
+        title: "RESUME",
         link: "/resume"
     }
 ]

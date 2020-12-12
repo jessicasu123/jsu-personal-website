@@ -1,6 +1,6 @@
-import githubIcon from "../../images/github-icon.png";
-import igIcon from "../../images/instagram-icon.png";
-import linkedinIcon from "../../images/linkedin-icon.png";
+import githubIcon from "../../images/footer-icons/github-icon.png";
+import igIcon from "../../images/footer-icons/instagram-icon.png";
+import linkedinIcon from "../../images/footer-icons/linkedin-icon.png";
 
 export const FooterElements = [
     {

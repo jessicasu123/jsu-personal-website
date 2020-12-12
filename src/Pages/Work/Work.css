@@ -1,0 +1,24 @@
+.work-section-title {
+    font-weight: lighter;
+    font-size: 30px;
+    color: var(--theme-green-color);
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.work-section {
+    margin-bottom: 50px;
+}
+
+.work-experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+
+.work-experience-image {
+    width: 350px;
+    cursor: pointer;
+}
