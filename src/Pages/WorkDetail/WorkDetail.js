@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Work extends Component {
+class WorkDetail extends Component {
     render() {
         return (
             <div>
-                Hello from Work
+                <div>{this.props.match.params.id} Work</div>
             </div>
         );
     }
 }
 
-export default Work;
+export default WorkDetail;

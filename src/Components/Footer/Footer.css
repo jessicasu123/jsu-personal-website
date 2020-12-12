@@ -1,5 +1,5 @@
 .footer {
-    height: 80px;
+    min-height: 80px;
     bottom: 0;
     margin-top: auto;
 }
