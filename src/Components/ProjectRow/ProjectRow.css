@@ -36,5 +36,29 @@
 .colored-dot {
     color: var(--theme-green-color);
     display: inline-block;
-    font-size: 100px;
+    font-size: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .project-text {
+        font-size: 45px;
+    }
+    .colored-dot {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .project-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .project-text {
+        font-size: 25px;
+    }
+
+    .colored-dot {
+        font-size: 25px;
+    }
 }

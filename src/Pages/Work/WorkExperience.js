@@ -1,8 +1,12 @@
-import squareLogo from '../../images/workplace-logos/square-logo.png';
+import squareImage from '../../images/workplace-images/square-image.png';
+import squareLogo from "../../images/workplace-images/square-logo.png";
 
 export const WorkExperiences = [
     {
         logo: squareLogo,
-        name: "Square"
+        name: "Square",
+        image: squareImage,
+        workDuration: 'Summer 2020',
+        projectDescription: 'Square Description'
     }
 ]

@@ -5,6 +5,6 @@ export const NavItems = [
     }, 
     {
         title: "RESUME",
-        link: "/resume"
+        link: "https://drive.google.com/file/d/1v4p3aDazqBGM4G2W-bpIpVEu25Tf5NFE/view?usp=sharing"
     }
 ]

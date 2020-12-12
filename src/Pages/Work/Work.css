@@ -22,3 +22,9 @@
     width: 350px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 400px) {
+    .work-experience-image {
+        width: 300px;
+    }
+}

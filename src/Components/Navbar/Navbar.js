@@ -30,11 +30,7 @@ class Navbar extends Component {
                         {NavItems.map((item) => {
                             return (
                                 <li className="nav-links" onClick={this.handleMenuItemClick}>
-                                    <Link to={{
-                                        pathname: item.link
-                                    }}>
-                                        {item.title}
-                                    </Link>
+                                    <a href={item.link}> {item.title}</a>
                                 </li>
                             );
                         })}

@@ -4,23 +4,27 @@
     font-weight: bold;
 }
 
-.project-duration {
+.project-duration, .company-work-duration {
     font-weight: lighter;
     font-size: 20px;
     margin-bottom: 40px;
 }
 
-.project-subtitle {
+.project-subtitle, .company-subtitle {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 30px;
     margin-bottom: 5px;
 }
 
-.project-description-text {
+.project-description-text, .company-project-description-text {
     color: #938D8D;
     font-size: 25px;
     margin-bottom: 35px;
+}
+
+.project-subtitle:last-of-type, .company-project-description-text:last-of-type {
+    margin-bottom: 25px;
 }
 
 .project-link {
