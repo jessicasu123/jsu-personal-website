@@ -16,3 +16,9 @@
 .github-icon {
     margin-top: 8px;
 }
+
+@media screen and (max-width: 768px) {
+    .footer {
+        margin-top: 0;
+    }
+}
