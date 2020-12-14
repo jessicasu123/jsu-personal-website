@@ -67,10 +67,11 @@ a:hover {
         text-align: left;
         font-size: 14px;
         width: 100%;
+        margin-bottom: 15px;
     }
 
     .nav-links:last-of-type {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .menu-icon {
