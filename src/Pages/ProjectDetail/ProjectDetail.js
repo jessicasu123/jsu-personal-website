@@ -1,11 +1,26 @@
 import React, { Component } from 'react';
 import './ProjectDetail.css';
+import WorkDescSection from '../../Components/WorkDescSection/WorkDescSection';
 
 class ProjectDetail extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            project: this.props.location.state.project
+            project: this.props.location.state.project,
+            sections: [
+            {
+                name: "About",
+                projectAttr: "description"
+            },
+            {
+                name: "Tech Stack",
+                projectAttr: "techDescription"
+            },
+            {
+                name: "Contributors",
+                projectAttr: "contributors"
+            }
+            ]
         }
     }
 
@@ -28,19 +43,7 @@ class ProjectDetail extends Component {
                     {this.state.project.duration}
                 </div>
 
-                <div className="project-subtitle">
-                    About
-                </div>
-                <div className="project-description-text">
-                    {this.state.project.description}
-                </div>
-
-                <div className="project-subtitle">
-                    Tech Stack
-                </div>
-                <div className="project-description-text">
-                    {this.state.project.techDescription}
-                </div>
+                <WorkDescSection sections={this.state.sections} work={this.state.project} />
 
                 <div className="project-subtitle">
                     LINKED <a href={this.state.project.projectLink} className="project-link"> HERE</a>

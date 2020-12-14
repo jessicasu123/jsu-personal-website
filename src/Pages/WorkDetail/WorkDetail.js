@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
 import './WorkDetail.css';
 import '../ProjectDetail/ProjectDetail.css';
+import WorkDescSection from '../../Components/WorkDescSection/WorkDescSection';
 
 class WorkDetail extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            company: this.props.location.state.company
+            company: this.props.location.state.company,
+            sections: [
+                {
+                    name: "My Project",
+                    projectAttr: "projectDescription"
+                },
+                {
+                    name: "Tech Stack",
+                    projectAttr: "techDescription"
+                }
+            ]
         }
     }
     render() {
@@ -21,16 +32,9 @@ class WorkDetail extends Component {
                     <div className="company-work-duration">
                         {this.state.company.workDuration}
                     </div>
-
                 </div>
 
-                <div className="company-subtitle">
-                    MY PROJECT
-                </div>
-
-                <div className="company-project-description-text">
-                    {this.state.company.projectDescription}
-                </div>
+                <WorkDescSection sections={this.state.sections} work={this.state.company} />
             </div>
         );
     }

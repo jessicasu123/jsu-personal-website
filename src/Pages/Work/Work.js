@@ -38,7 +38,7 @@ class Work extends Component {
                                         company: company
                                     }
                                 }}>
-                                <img className="work-experience-image" src={company.image} />
+                                <img className="work-experience-image" src={company.image} alt={company.name}/>
                                 </Link>
                             )
                         })}

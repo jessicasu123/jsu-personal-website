@@ -1,0 +1,26 @@
+.project-description-text {
+    color: #938D8D;
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+
+.project-subtitle {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.project-subtitle:last-of-type {
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 500px) {
+    .project-description-text, .company-project-description-text {
+        font-size: 16px;
+    }
+
+    .project-subtitle {
+        font-size: 25px;
+    }
+}
