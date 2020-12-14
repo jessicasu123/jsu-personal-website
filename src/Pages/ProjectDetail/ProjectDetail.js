@@ -1,56 +1,51 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ProjectDetail.css';
 import WorkDescSection from '../../Components/WorkDescSection/WorkDescSection';
+import { Projects } from '../Work/Projects';
+import { useParams } from 'react-router-dom';
 
-class ProjectDetail extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            project: this.props.location.state.project,
-            sections: [
-            {
-                name: "About",
-                projectAttr: "description"
-            },
-            {
-                name: "Tech Stack",
-                projectAttr: "techDescription"
-            },
-            {
-                name: "Contributors",
-                projectAttr: "contributors"
-            }
-            ]
+function ProjectDetail() {
+    let params = useParams();
+    const [project, setProject] = useState('');
+
+    useEffect(() => {
+        const projectParam = params.id;
+
+        const proj = Projects.find(proj => proj.name === projectParam)
+        setProject(proj);
+    }, [params])
+
+    const [sections] = useState([
+        {
+            name: "About",
+            projectAttr: "description"
+        },
+        {
+            name: "Tech Stack",
+            projectAttr: "techDescription"
+        },
+        {
+            name: "Contributors",
+            projectAttr: "contributors"
         }
-    }
+    ]);
 
-    static getDerivedStateFromProps(props, state) {
-        if (props.location.state.project !== state.project) {
-            return {
-                project: props.location.state.project
-            };
-        }
-        return null;
-    }
-
-    render() {
-        return (
-            <div>
-                <div className="project-detail-title">
-                    {this.state.project.name}
-                </div>
-                <div className="project-duration">
-                    {this.state.project.duration}
-                </div>
-
-                <WorkDescSection sections={this.state.sections} work={this.state.project} />
-
-                <div className="project-subtitle">
-                    LINKED <a href={this.state.project.projectLink} className="project-link"> HERE</a>
-                </div>
+    return (
+        <div>
+            <div className="project-detail-title">
+                {project.name}
             </div>
-        );
-    }
+            <div className="project-duration">
+                {project.duration}
+            </div>
+
+            <WorkDescSection sections={sections} work={project} />
+
+            <div className="project-subtitle">
+                LINKED <a href={project.projectLink} className="project-link"> HERE</a>
+            </div>
+        </div>
+    );
 }
 
 export default ProjectDetail;

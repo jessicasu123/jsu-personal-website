@@ -14,15 +14,15 @@
 }
 
 .project-image {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     display: inline-block;
     margin-top: auto;
     margin-bottom: auto;
 }
 
 .project-text {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
     display: inline-block;
     margin-left: 50px;
@@ -35,7 +35,7 @@
 .colored-dot {
     color: var(--theme-green-color);
     display: inline-block;
-    font-size: 80px;
+    font-size: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -43,7 +43,7 @@
         font-size: 45px;
     }
     .colored-dot {
-        font-size: 60px;
+        font-size: 45px;
     }
 }
 

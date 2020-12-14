@@ -85,7 +85,7 @@
 
     .home-main {
         flex-direction: column;
-        height: 100vh;
+        height: 65vh;
         justify-content: center;
         align-items: center;
         margin: 0;
