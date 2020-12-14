@@ -10,23 +10,12 @@
     margin-bottom: 40px;
 }
 
-.project-subtitle, .company-subtitle {
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 30px;
-    margin-bottom: 5px;
-}
-
-.project-description-text, .company-project-description-text {
-    color: #938D8D;
-    font-size: 25px;
-    margin-bottom: 35px;
-}
-
-.project-subtitle:last-of-type, .company-project-description-text:last-of-type {
-    margin-bottom: 25px;
-}
-
 .project-link {
     color: var(--theme-green-color);
+}
+
+@media screen and (max-width: 500px) {
+    .project-detail-title {
+        font-size: 60px;
+    }
 }

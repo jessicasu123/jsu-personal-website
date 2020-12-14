@@ -48,7 +48,7 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .project-image {
         width: 100px;
         height: 100px;
@@ -60,5 +60,20 @@
 
     .colored-dot {
         font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .project-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .project-text {
+        font-size: 18px;
+    }
+
+    .colored-dot {
+        font-size: 15px;
     }
 }
