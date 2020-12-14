@@ -14,17 +14,16 @@
 }
 
 .project-image {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     display: inline-block;
     margin-top: auto;
     margin-bottom: auto;
 }
 
 .project-text {
-    font-size: 65px;
+    font-size: 60px;
     font-weight: bold;
-    /* text-transform: uppercase; */
     display: inline-block;
     margin-left: 50px;
     margin-top: auto;
