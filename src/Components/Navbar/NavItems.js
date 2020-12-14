@@ -1,7 +1,7 @@
 export const NavItems = [
     {
         title: "WORK",
-        link: "/work"
+        link: "/#/work" // needed because using HashRouter
     }, 
     {
         title: "RESUME",

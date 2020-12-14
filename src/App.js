@@ -16,14 +16,6 @@ function App() {
         <Route path="/work/project/:id" exact component={ProjectDetail} />
         <Route path="/work/industry/:id" exact component={WorkDetail} />
         <Route path="/" exact component={Home} />
-        {/* <Route
-          path="/resume"
-          component={() => {
-            window.location.href =
-              "https://drive.google.com/file/d/1v4p3aDazqBGM4G2W-bpIpVEu25Tf5NFE/view?usp=sharing";
-            return null;
-          }}
-        /> */}
       </Switch>
       <Footer />
     </div>
