@@ -1,13 +1,13 @@
 .project-description-text {
     color: #938D8D;
-    font-size: 22px;
+    font-size: 18px;
     margin-bottom: 35px;
 }
 
 .project-subtitle {
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 5px;
 }
 
@@ -21,6 +21,6 @@
     }
 
     .project-subtitle {
-        font-size: 25px;
+        font-size: 22px;
     }
 }
