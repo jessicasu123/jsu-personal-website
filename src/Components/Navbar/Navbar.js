@@ -28,11 +28,19 @@ class Navbar extends Component {
                     </div>
                     <ul className={this.state.menuClicked ? 'nav-menu active': 'nav-menu'}>
                         {NavItems.map((item) => {
-                            return (
-                                <li className="nav-links" onClick={this.handleMenuItemClick}>
-                                    <a href={item.link}> {item.title}</a>
-                                </li>
-                            );
+                            if (item.externalLink) {
+                                return (
+                                    <li className="nav-links" onClick={this.handleMenuItemClick}>
+                                        <a href= {item.link}> {item.title}</a>
+                                    </li>
+                                );
+                            } else {
+                                return (
+                                    <li className="nav-links" onClick={this.handleMenuItemClick}>
+                                        <Link to={item.link}>{item.title}</Link>
+                                    </li>
+                                );
+                            }
                         })}
                     </ul>
                 </nav>
