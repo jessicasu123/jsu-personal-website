@@ -13,6 +13,12 @@
     font-size: 100px;
 }
 
+.company-work-duration {
+    font-weight: lighter;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
 @media screen and (max-width: 500px) {
     .company-logo {
         width: 90px;

@@ -4,7 +4,7 @@ import {Switch, Route } from 'react-router-dom';
 import Work from './Pages/Work/Work';
 import Home from './Pages/Home/Home';
 import Footer from './Components/Footer/Footer';
-import WorkDetail from './Pages/WorkDetail/WorkDetail';
+import IndustryDetail from './Pages/IndustryDetail/IndustryDetail';
 import ProjectDetail from './Pages/ProjectDetail/ProjectDetail';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
           <ProjectDetail />
         </Route>
         <Route path="/work/industry/:id" exact>
-            <WorkDetail />
+          <IndustryDetail />
         </Route>
         <Route path="/" exact component={Home} />
       </Switch>

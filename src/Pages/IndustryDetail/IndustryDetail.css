@@ -1,0 +1,25 @@
+/* .company-logo {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+.company-info {
+    display: inline-block;
+}
+
+.company-name {
+    font-weight: bold;
+    font-size: 100px;
+}
+
+@media screen and (max-width: 500px) {
+    .company-logo {
+        width: 90px;
+        height: 90px;
+    }
+
+    .company-name {
+        font-size: 65px;
+    }
+} */

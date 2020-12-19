@@ -1,7 +1,7 @@
 import squareImage from '../../images/workplace-images/square-image.png';
 import squareLogo from "../../images/workplace-images/square-logo.png";
 
-export const WorkExperiences = [
+export const IndustryExperiencies = [
     {
         logo: squareLogo,
         name: "Square",

@@ -1,51 +1,63 @@
-import React, { useState, useEffect } from 'react';
+import React, { Component } from 'react';
 import './ProjectDetail.css';
-import WorkDescSection from '../../Components/WorkDescSection/WorkDescSection';
 import { Projects } from '../Work/Projects';
+import ProjectDetailHeader from '../ProjectDetailHeader/ProjectDetailHeader';
+import ProjectDetailFooter from '../ProjectDetailFooter/ProjectDetailFooter';
 import { useParams } from 'react-router-dom';
+import DetailPage from '../DetailPage/DetailPage';
 
-function ProjectDetail() {
-    let params = useParams();
-    const [project, setProject] = useState('');
+const projectSections = [
+    {
+        name: "About",
+        projectAttr: "description"
+    },
+    {
+        name: "Tech Stack",
+        projectAttr: "techDescription"
+    },
+    {
+        name: "Contributors",
+        projectAttr: "contributors"
+    }
+]
 
-    useEffect(() => {
-        const projectParam = params.id;
-
-        const proj = Projects.find(proj => proj.name === projectParam)
-        setProject(proj);
-    }, [params])
-
-    const [sections] = useState([
-        {
-            name: "About",
-            projectAttr: "description"
-        },
-        {
-            name: "Tech Stack",
-            projectAttr: "techDescription"
-        },
-        {
-            name: "Contributors",
-            projectAttr: "contributors"
-        }
-    ]);
+/**
+ * Exhibits composition by using DetailPage component.
+ */
+function ProjectDetailPage() {
+    const params = useParams();
+    const projectParam = params.id;
 
     return (
-        <div>
-            <div className="project-detail-title">
-                {project.name}
-            </div>
-            <div className="project-duration">
-                {project.duration}
-            </div>
-
-            <WorkDescSection sections={sections} work={project} />
-
-            <div className="project-subtitle">
-                LINKED <a href={project.projectLink} className="project-link"> HERE</a>
-            </div>
-        </div>
-    );
+        <DetailPage name={projectParam} infoSource={Projects} header={ProjectDetailHeader} 
+        footer={ProjectDetailFooter} sections={projectSections} />
+    )
 }
 
-export default ProjectDetail;
+/**
+ * Previous class component version.
+ * Does NOT exhibit composition; repeats logic with IndustryDetail.
+ * 
+ */
+// class ProjectDetail extends Component {
+//     findProject() {
+//         const projectParam = this.props.match.params.id;
+//         const proj = Projects.find(proj => proj.name === projectParam);
+//         return proj;
+//     }
+
+//     render() {
+//         const project = this.findProject();
+//         return (
+//             <div>
+//                 <ProjectDetailHeader project={project} />
+
+//                 <WorkDescSection projectSections={projectSections} work={project} />
+
+//                 <ProjectDetailFooter project={project} />
+//             </div>
+//         );
+//     }
+// }
+
+export default ProjectDetailPage;

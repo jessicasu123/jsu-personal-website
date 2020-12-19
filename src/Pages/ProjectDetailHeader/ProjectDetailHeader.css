@@ -1,21 +1,17 @@
-/* .project-detail-title {
+.project-detail-title {
     font-size: 100px;
     color: var(--theme-green-color);
     font-weight: bold;
 }
 
-.project-duration, .company-work-duration {
+.project-duration {
     font-weight: lighter;
     font-size: 20px;
     margin-bottom: 40px;
-} */
-
-.project-link {
-    color: var(--theme-green-color);
 }
 
-/* @media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .project-detail-title {
         font-size: 60px;
     }
-} */
+}

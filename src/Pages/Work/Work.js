@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import './Work.css';
 import { Projects } from './Projects';
 import ProjectRow from '../../Components/ProjectRow/ProjectRow';
-import { WorkExperiences } from './WorkExperience';
+import { IndustryExperiencies } from './IndustryExperience';
 import { Link } from 'react-router-dom';
 
 const PROJECTS_TITLE = "Projects";
-const WORK_TITLE = "Places I've Worked";
+const INDUSTRY_TITLE = "Places I've Worked";
 
 class Work extends Component {
     render() {
@@ -25,12 +25,12 @@ class Work extends Component {
                 </div>
 
                 <div className="work-section-title">
-                    {WORK_TITLE}
+                    {INDUSTRY_TITLE}
                 </div>
 
                 <div className="work-section">
                     <div className="work-experience-grid">
-                        {WorkExperiences.map(company => {
+                        {IndustryExperiencies.map(company => {
                             return (
                                 <Link to={{
                                     pathname: `/work/industry/${company.name}`}}>
