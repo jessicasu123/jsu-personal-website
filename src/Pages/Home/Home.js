@@ -3,7 +3,7 @@ import './Home.css';
 import profpic from '../../images/jessica-prof-pic.png';
 
 const SQUARE_LINK = "https://squareup.com";
-const FB_LINK = "https://facebook.com";
+const IG_LINK = "https://instagram.com";
 const SLACK_LINK = "https://slack.com";
 
 class Home extends Component {
@@ -27,9 +27,8 @@ class Home extends Component {
                     
                     <div className="description-section">
                         <div className="description-text">
-                            Previously <a href={SQUARE_LINK}><b>@Square</b></a>, Upcoming <br/> 
-                            <a href={FB_LINK}><b>@Facebook</b></a>,
-                            <a href={SLACK_LINK}><b> @Slack</b></a>
+                            Previously <a href={SQUARE_LINK}><b>@Square</b></a>, <a href={IG_LINK}><b>@Instagram</b></a>, <br></br>
+                            Upcoming <a href={SLACK_LINK}><b> @Slack</b></a>
                         </div>
                         
                     </div>
