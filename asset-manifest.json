@@ -1,29 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.eec52535.chunk.css",
-    "main.js": "/static/js/main.cf2bdfac.chunk.js",
-    "main.js.map": "/static/js/main.cf2bdfac.chunk.js.map",
+    "main.css": "/static/css/main.e1434cb5.chunk.css",
+    "main.js": "/static/js/main.4d4ce4c6.chunk.js",
+    "main.js.map": "/static/js/main.4d4ce4c6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.998e5d80.js",
     "runtime-main.js.map": "/static/js/runtime-main.998e5d80.js.map",
     "static/js/2.1650d4c4.chunk.js": "/static/js/2.1650d4c4.chunk.js",
     "static/js/2.1650d4c4.chunk.js.map": "/static/js/2.1650d4c4.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.eec52535.chunk.css.map": "/static/css/main.eec52535.chunk.css.map",
+    "static/css/main.e1434cb5.chunk.css.map": "/static/css/main.e1434cb5.chunk.css.map",
     "static/js/2.1650d4c4.chunk.js.LICENSE.txt": "/static/js/2.1650d4c4.chunk.js.LICENSE.txt",
     "static/media/duke-check.79fb1cb0.png": "/static/media/duke-check.79fb1cb0.png",
     "static/media/earthy-creations.e8913c34.png": "/static/media/earthy-creations.e8913c34.png",
     "static/media/github-icon.742299e0.png": "/static/media/github-icon.742299e0.png",
     "static/media/impresent.35510b81.png": "/static/media/impresent.35510b81.png",
+    "static/media/instagram-image.f6c38617.png": "/static/media/instagram-image.f6c38617.png",
     "static/media/instagram-logo.43f59e21.png": "/static/media/instagram-logo.43f59e21.png",
     "static/media/jessica-prof-pic.85a9d07f.png": "/static/media/jessica-prof-pic.85a9d07f.png",
     "static/media/parlay-island.0d6c8c44.png": "/static/media/parlay-island.0d6c8c44.png",
-    "static/media/square-image.11905e37.png": "/static/media/square-image.11905e37.png",
+    "static/media/slack-image.4a47068f.png": "/static/media/slack-image.4a47068f.png",
+    "static/media/slack-logo.8c80a788.png": "/static/media/slack-logo.8c80a788.png",
+    "static/media/square-image.d5f8cf62.png": "/static/media/square-image.d5f8cf62.png",
     "static/media/strategize.d412e4ed.png": "/static/media/strategize.d412e4ed.png"
   },
   "entrypoints": [
     "static/js/runtime-main.998e5d80.js",
     "static/js/2.1650d4c4.chunk.js",
-    "static/css/main.eec52535.chunk.css",
-    "static/js/main.cf2bdfac.chunk.js"
+    "static/css/main.e1434cb5.chunk.css",
+    "static/js/main.4d4ce4c6.chunk.js"
   ]
 }
