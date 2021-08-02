@@ -32,7 +32,7 @@ class Work extends Component {
                     <div className="work-experience-grid">
                         {IndustryExperiencies.map(company => {
                             return (
-                                <Link to={{
+                                <Link className="work-experience-link" to={{
                                     pathname: `/work/industry/${company.name}`}}>
                                     <img className="work-experience-image" src={company.image} alt={company.name}/>
                                 </Link>

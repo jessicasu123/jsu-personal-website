@@ -28,7 +28,7 @@ class Home extends Component {
                     <div className="description-section">
                         <div className="description-text">
                             Previously <a href={SQUARE_LINK}><b>@Square</b></a>, <a href={IG_LINK}><b>@Instagram</b></a>, <br></br>
-                            Upcoming <a href={SLACK_LINK}><b> @Slack</b></a>
+                            <a href={SLACK_LINK}><b> @Slack</b></a>
                         </div>
                         
                     </div>

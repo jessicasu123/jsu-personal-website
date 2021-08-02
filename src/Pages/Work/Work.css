@@ -3,7 +3,7 @@
     font-size: 30px;
     color: var(--theme-green-color);
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     text-transform: uppercase;
 }
 
@@ -14,7 +14,7 @@
 .work-experience-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-row-gap: 30px;
+    grid-row-gap: 45px;
     grid-column-gap: 30px;
 }
 
@@ -23,14 +23,19 @@
     cursor: pointer;
 }
 
+.work-experience-link {
+    display: flex;
+    align-items: center;
+}
+
 @media screen and (max-width: 500px) {
     .work-experience-image {
-        width: 300px;
+        width: 200px;
     }
 }
 
 @media screen and (max-width: 300px) {
     .work-experience-image {
-        width: 280px;
+        width: 150px;
     }
 }
